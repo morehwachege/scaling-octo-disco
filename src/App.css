@@ -200,3 +200,12 @@ input[type="color"]:focus,
 .top-container{
   height: 100vh;
 }
+
+/* start registration */
+.modal-header{
+  border: 0;
+}
+.modal-body{
+  height: 500px;
+}
+/* end registration */
