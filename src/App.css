@@ -206,6 +206,19 @@ input[type="color"]:focus,
   border: 0;
 }
 .modal-body{
-  height: 500px;
+  height: 625px;
+}
+.course-modal-submit-btn{
+  width: 200px;
+  height: 40px;
+  background-color: var(--primary-color);
+  color: var(--primary-lighter-color);
+  border: 0;
+  border-radius: 10px;
+}
+.course-modal-submit-btn:hover{
+  background-color: var(--primary-darker-color);
+  transition: .2s ease;
+
 }
 /* end registration */

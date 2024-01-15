@@ -9,7 +9,7 @@ function Registration() {
         data-bs-toggle="modal"
         data-bs-target="#exampleModalCenter"
       >
-        Launch demo modal
+        Launch course registration modal
       </button>
       <div
         className="modal fade"
@@ -63,13 +63,23 @@ function Registration() {
                 />
               </svg>
               <p className="h5 text-center fw-bold">Course Registration</p>
-              <form>
-                <div className="form-group">
-                  <label htmlFor="exampleInputEmail1">Email address</label>
+              <form className="py-4 px-2">
+                <div className="form-group pb-3">
+                  <label htmlFor="email">Full Name</label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="fName"
+                    aria-describedby="fullNameHelp"
+                    placeholder="Enter your full name"
+                  />
+                </div>
+                <div className="form-group pb-3">
+                  <label htmlFor="email">Email address</label>
                   <input
                     type="email"
                     className="form-control"
-                    id="exampleInputEmail1"
+                    id="email"
                     aria-describedby="emailHelp"
                     placeholder="Enter email"
                   />
@@ -77,27 +87,59 @@ function Registration() {
                     We'll never share your email with anyone else.
                   </small>
                 </div>
-                <div className="form-group">
-                  <label htmlFor="exampleInputPassword1">Password</label>
+                <div className="form-group pb-3">
+                  <label htmlFor="telephone">Telephone number</label>
                   <input
-                    type="password"
+                    type="tel"
                     className="form-control"
-                    id="exampleInputPassword1"
-                    placeholder="Password"
+                    id="telephone"
+                    aria-describedby="emailHelp"
+                    placeholder="254 ..."
                   />
                 </div>
-                <div className="form-check">
-                  <input
-                    type="checkbox"
-                    className="form-check-input"
-                    id="exampleCheck1"
-                  />
-                  <label className="form-check-label" htmlFor="exampleCheck1">
-                    Check me out
+                <div className="form-group pb-3">
+                  <label
+                    htmlFor="exampleFormControlSelect1"
+                    className="form-label"
+                  >
+                    Educational Background
                   </label>
+                  <select
+                    className="form-select"
+                    id="exampleFormControlSelect1"
+                    aria-label="Educational Background"
+                  >
+                    <option value="">Select an option</option>
+                    <option value="option1">Highschool Diploma</option>
+                    <option value="option2">College Degree</option>
+                    <option value="option3">Vocational Couse</option>
+                    <option value="option3">Short course/Bootcamp</option>
+                  </select>
                 </div>
-                <button type="submit" className="btn btn-primary">
-                  Submit
+                <div className="checks d-flex flex-row align-items-start justify-content-start py-2 gap-3">
+                  <div className="form-check">
+                    <input
+                      type="checkbox"
+                      className="form-check-input"
+                      id="exampleCheck1"
+                    />
+                    <label className="form-check-label" htmlFor="exampleCheck1">
+                      part-time
+                    </label>
+                  </div>
+                  <div className="form-check">
+                    <input
+                      type="checkbox"
+                      className="form-check-input"
+                      id="exampleCheck1"
+                    />
+                    <label className="form-check-label" htmlFor="exampleCheck1">
+                      full-time
+                    </label>
+                  </div>
+                </div>
+                <button type="submit" className=" course-modal-submit-btn">
+                  register
                 </button>
               </form>
             </div>
